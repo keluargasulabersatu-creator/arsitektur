@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perbedaan Arsitektur vs Organisasi Komputer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 min-h-screen flex flex-col">
+
+  <!-- Hero -->
+  <header class="text-center text-white py-12 px-4">
+    <h1 class="text-3xl md:text-4xl font-extrabold drop-shadow-lg">🏠 Perbedaan Arsitektur vs Organisasi Komputer</h1>
+    <p class="mt-3 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed">
+      Bayangkan kita sedang membangun sebuah rumah.<br>
+      Denah rumah = <strong>arsitektur</strong>.<br>
+      Material & cara membangun = <strong>organisasi</strong>.<br>
+      Nah, komputer juga sama!
+    </p>
+  </header>
+
+  <!-- Konten -->
+  <main class="flex-1 container mx-auto px-6 py-10 bg-white/95 rounded-2xl shadow-lg backdrop-blur-md">
+
+    <!-- Perbedaan -->
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+
+      <!-- Arsitektur -->
+      <div class="p-6 bg-gradient-to-r from-indigo-100 to-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-indigo-700 mb-4">1. Arsitektur Komputer</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          <strong>Rancangan logis</strong> yang terlihat oleh programmer.<br>
+          Menentukan <em>apa</em> yang komputer bisa lakukan.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-800">
+          <li>Instruction Set Architecture (ISA) seperti <code>ADD</code>, <code>SUB</code>, <code>MOV</code>.</li>
+          <li>Cara instruksi mengakses data (<em>mode addressing</em>).</li>
+          <li>Jumlah & ukuran register.</li>
+          <li>Kapasitas memori yang bisa diakses.</li>
+        </ul>
+        <p class="mt-4 text-gray-700 italic">
+          ➡️ Pertanyaan yang dijawab: <strong>“Komputer ini bisa melakukan apa saja?”</strong>
+        </p>
+        <p class="mt-2 text-sm text-gray-600">
+          Contoh: program x86 tidak bisa langsung dijalankan di ARM.
+        </p>
+      </div>
+
+      <!-- Organisasi -->
+      <div class="p-6 bg-gradient-to-r from-pink-100 to-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-pink-700 mb-4">2. Organisasi Komputer</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          <strong>Cara arsitektur diwujudkan secara fisik</strong> di dalam mesin.<br>
+          Menjelaskan <em>bagaimana</em> komputer dibangun & bekerja.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-800">
+          <li>Penggunaan pipeline untuk instruksi.</li>
+          <li>Ukuran & level cache memory.</li>
+          <li>Jenis memori (DRAM, SSD, NVMe).</li>
+          <li>Komunikasi CPU, memori, & I/O lewat bus.</li>
+          <li>Clock speed, jumlah core, hyper-threading.</li>
+        </ul>
+        <p class="mt-4 text-gray-700 italic">
+          ➡️ Pertanyaan yang dijawab: <strong>“Bagaimana komputer menjalankan pekerjaannya?”</strong>
+        </p>
+        <p class="mt-2 text-sm text-gray-600">
+          Contoh: Intel i5 & i7 sama-sama arsitektur x86, tapi i7 lebih cepat karena organisasinya lebih maju.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kesimpulan -->
+    <section class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold text-yellow-700 mb-3">3. Kesimpulan</h3>
+      <ul class="list-none space-y-2 text-gray-800">
+        <li>📌 <strong>Arsitektur</strong> = rancangan logis → instruksi & fitur yang terlihat programmer.</li>
+        <li>📌 <strong>Organisasi</strong> = implementasi fisik → performa & cara mesin bekerja.</li>
+      </ul>
+      <p class="mt-4 text-gray-700 leading-relaxed">
+        Dua sistem bisa punya arsitektur sama tapi organisasi berbeda, atau sebaliknya.<br>
+        ✔ Paham <strong>arsitektur</strong> → tahu program bisa jalan atau tidak.<br>
+        ✔ Paham <strong>organisasi</strong> → tahu kenapa komputer A lebih cepat dari komputer B.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-white text-sm py-6 mt-6">
+    &copy; 2025 Program Studi Teknik Informatika - STTAR Ternate
+  </footer>
+
+</body>
+</html>

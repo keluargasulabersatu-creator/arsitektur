@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Komputer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .card {
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      font-size: 20px;
+      color: #fff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .emoji {
+      font-size: 28px;
+      margin-right: 10px;
+    }
+
+    /* Warna berbeda tiap card */
+    .ram-card {
+      background-color: #4caf50; /* hijau */
+    }
+
+    .core-card {
+      background-color: #2196f3; /* biru */
+    }
+
+    .kesimpulan-card {
+      background-color: #ff9800; /* oranye */
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Belajar Komputer</h1>
+
+  <!-- Card 1: RAM -->
+  <div class="card ram-card">
+    <h2><span class="emoji">🧠</span> Kenapa Butuh RAM Besar?</h2>
+    <p>Bayangkan kamu sedang belajar:</p>
+    <ul>
+      <li>Meja belajar = RAM</li>
+      <li>Lemari buku = Hard disk/SSD</li>
+    </ul>
+    <p>Kalau mejanya kecil (RAM kecil), kamu cuma bisa taruh 1–2 buku. Kalau butuh buku lain, kamu harus bolak-balik ke lemari → lambat.</p>
+    <p>Kalau mejanya besar (RAM besar), kamu bisa taruh banyak buku sekaligus → belajar lebih cepat.</p>
+    <p>👉 Jadi, <span class="highlight">RAM besar = bisa buka banyak program/file bersamaan tanpa nge-lag.</span></p>
+  </div>
+
+  <!-- Card 2: Prosesor Core -->
+  <div class="card core-card">
+    <h2><span class="emoji">⚙️</span> Kenapa Prosesor Punya Banyak Core? Apa Itu Core?</h2>
+    <ul>
+      <li>Core = otak kecil di dalam prosesor.</li>
+      <li>Dulu, prosesor hanya punya 1 core (single-core). Semua kerjaan diproses satu per satu.</li>
+      <li>Sekarang prosesor bisa punya 2, 4, 8, bahkan puluhan core → artinya ada banyak otak yang bisa kerja paralel.</li>
+    </ul>
+    <p>📌 Analogi:</p>
+    <ul>
+      <li>Bayangkan ada 1 orang kuli bangunan (1 core) → semua pekerjaan harus dia kerjakan sendiri → lama.</li>
+      <li>Kalau ada 8 kuli (8 core) → bisa bagi tugas: ada yang aduk semen, ada yang angkut pasir, ada yang bikin pondasi. Pekerjaan selesai lebih cepat.</li>
+    </ul>
+    <p>👉 Jadi, semakin banyak core, komputer bisa multitasking dengan lancar (misalnya main game sambil streaming, sambil buka aplikasi lain).</p>
+  </div>
+
+  <!-- Card 3: Kesimpulan -->
+  <div class="card kesimpulan-card">
+    <h2><span class="emoji">✨</span> Kesimpulan</h2>
+    <ul>
+      <li>RAM besar = meja kerja luas → bisa taruh banyak “alat belajar” (aplikasi/data) sekaligus.</li>
+      <li>Core banyak = banyak pekerja otak → bisa ngerjain tugas secara paralel, lebih cepat dan efisien.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
